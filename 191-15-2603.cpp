@@ -57,7 +57,7 @@ int iterative_binary_search(int arr[],int L, int R, int val)
 int main()
 {
     int arr[] = {22,25,28,32,37,43,55,61,76,83,87,92,102,104};
-    int size = sizeof(arr)/sizeof(arr[0]);
+    int size = sizeof(arr)/sizeof(arr[0]);//This statement use for find the array size
     int index = recursive_binary_search(arr,0,size-1,104);
     (index ==-1)? cout<<"element not found" : cout<<"element found. index is: "<<index<<endl;
     index = iterative_binary_search(arr,0,size-1,92);
